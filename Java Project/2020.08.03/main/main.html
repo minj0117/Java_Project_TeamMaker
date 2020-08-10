@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        outline: 1px solid red;
+      }
+      /* topmenu */
+      .topmenu {
+        display: flex;
+        width: 100%;
+        padding-top: 30px;
+      }
+
+      .topmenu img {
+        width: 180px;
+        height: 100px;
+      }
+      header {
+        display: flex;
+        justify-content: center;
+      }
+
+      header img {
+        height: 150px;
+        padding-top: 30px;
+      }
+      /* nav */
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }
+      nav div ul li {
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 1px dotted red;
+      }
+      nav div ul li a {
+        text-decoration: none;
+      }
+
+      /* main */
+      main .container .content section {
+        display: grid;
+        grid-template-columns: 600px 600px;
+        justify-content: center;
+        grid-template-rows: 400px 400px;
+        grid-gap: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      main .container .content section article {
+        outline: 1px dotted red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* footer */
+      /* footer : bottom-container1 */
+      .bottommenu > .bottom-container1 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .bottommenu > .bottom-container1 > ul {
+        list-style: none;
+        display: flex;
+        border: 1px dotted red;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .bottommenu > .bottom-container1 > ul > li {
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .bottommenu > .bottom-container1 > ul > li > a {
+        text-decoration: none;
+        color: black;
+      }
+      .bottommenu > .bottom-container1 > ul > li > #policy {
+        color: lightskyblue;
+      }
+
+      /* footer : bottom-container2 */
+      .bottommenu2 {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 1fr;
+        width: 50%;
+        margin: 0 auto;
+      }
+      .bottommenu2 .bottom-left {
+        grid-row: 1/3;
+      }
+      .bottommenu2 img {
+        width: 200px;
+        height: 100px;
+      }
+      .bottommenu2 > .bottom-container2 > ul {
+        list-style: none;
+      }
+      .bottommenu2 > .bottom-container2 > ul > li {
+        display: inline-block;
+        border: 1px dotted red;
+        padding-right: 20px;
+      }
+      /* footer : bottom-container3 */
+      .bottommenu2 > .bottom-container3 > ul {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- uppermost -->
+    <div class="topmenu">
+      <div>
+        <img src="./team.jpg" alt="" />
+      </div>
+      <div>
+        <div class="uppermost">로그인 | 회원가입</div>
+      </div>
+    </div>
+
+    <!-- header -->
+    <header>
+      <div>
+        <img src="./banner.jpg" alt="" />
+      </div>
+    </header>
+
+    <!-- nav -->
+    <nav>
+      <div>
+        <ul>
+          <li><a href="#">팀원 모집</a></li>
+          <li><a href="#">공모전</a></li>
+          <li><a href="#">대외활동</a></li>
+          <li><a href="#">커뮤니티</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <main>
+      <div class="container">
+        <div class="content">
+          <section>
+            <article>관련 기사</article>
+            <article>공모전</article>
+            <article>대외활동</article>
+            <article>팀원 모집</article>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="bottommenu">
+        <div class="bottom-container1">
+          <ul>
+            <li><a href="#">사이트 소개</a></li>
+            <li>|</li>
+            <li><a href="#">광고 안내</a></li>
+            <li>|</li>
+            <li><a href="#">이용 약관</a></li>
+            <li>|</li>
+            <li><a href="#" id="policy">개인정보처리방침</a></li>
+            <li>|</li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bottommenu2">
+        <div class="bottom-left">
+          <img src="./team.jpg" alt="" />
+        </div>
+
+        <div class="bottom-container2">
+          <ul>
+            <li>TEAM MAKER</li>
+            <li>대표: 홍길동</li>
+            <li>E-mail: teammaker@gmail.com</li>
+          </ul>
+        </div>
+
+        <div class="bottom-container3">
+          <ul>
+            <li>주소: (00000) 울산광역시 신정동 OOOOO OOO</li>
+            <li>Copyright 2020 TEAM MAKER Corp. All right reserved.</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
