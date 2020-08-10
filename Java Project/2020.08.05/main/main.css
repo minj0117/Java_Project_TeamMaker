@@ -1,0 +1,253 @@
+* {
+  outline: 1px dotted red;
+}
+.container {
+  width: 80%;
+  margin: 0px auto;
+}
+
+/* uppermost */
+.uppermost > .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.uppermost div img {
+  width: 200px;
+  height: 150px;
+  vertical-align: bottom  ;
+}
+.uppermost div > a {
+  text-decoration: none;
+}
+.uppermost .container div{
+  align-self: flex-end;
+}
+
+/* header */
+header div > a > img {
+  width: 100%;
+  height: 400px;
+}
+
+/* nav */
+nav > .container > ul {
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+}
+nav > .container > ul > li {
+  flex: 2 2 0;
+  text-align: center;
+  padding: 20px;
+  background-color: #000051;
+}
+nav > .container > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+nav > .container > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+/* main */
+main > .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 420px 420px;
+  grid-gap: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+main .team_matching,
+main .gong,
+main .dae,
+main .arti {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+/* main : team_matching */
+.team_matching div {
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+
+.team_matching ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.team_matching ul > li {
+  padding: 20px;
+}
+
+.team_matching ul > li > a {
+  text-decoration: none;
+}
+
+/* main : gong */
+.gong > #gong_title {
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+
+.gong img {
+  width: 180px;
+  /* padding: 10px; */
+}
+
+.gong .gong_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr;  
+  /* padding-top: 10px;   */
+  /* border: 5px solid blue; */
+  
+}
+
+
+
+.gong .gong_wrapper > div:nth-child(1),
+.gong .gong_wrapper > div:nth-child(2)  {
+  align-self: center;
+  justify-self: center;
+  
+}
+
+.gong a {
+  text-decoration: none;
+}
+
+/* main : dae */
+.dae > #dae_title {
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+
+.dae img {
+  width: 180px;
+  padding: 10px;
+}
+
+.dae .dae_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr;   
+  padding: 10px;   
+}
+
+.dae .dae_wrapper div {
+  justify-content: center;
+}
+
+.dae a {
+  text-decoration: none;
+}
+
+/* main : arti */
+.arti > #arti_title {
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+
+.arti img {
+  width: 180px;
+  padding: 10px;
+}
+
+.arti .arti_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 280px 50px; 
+  padding: 10px;
+  ;
+}
+
+.arti .arti_wrapper div {
+  justify-content: center;
+}
+
+.arti a {
+  text-decoration: none;
+}
+
+.arti #arti_left,
+.arti #arti_right {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+
+
+/* footer */
+/* footer_menu */
+footer .footer_menu > ul {
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #000051;
+}
+footer .footer_menu > ul > li {
+  padding: 20px;
+  color: white;
+}
+footer .footer_menu > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+footer .footer_menu > ul > li > #policy {
+  color: yellowgreen;
+}
+/* footer_menu2 */
+/* footer .footer_menu2 {
+  display: flex;
+  padding: 10px 0px;
+}
+
+footer .footer_menu2 > .left > img {
+  width: 200px;
+  height: 150px;
+}
+
+footer .footer_menu2 > .right > ul {
+  list-style: none;
+  padding-left: 0px;
+} */
+
+footer .footer_menu2 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+footer .footer_menu2 > .left > img {
+  width: 200px;
+  height: 150px;
+  padding-left: 200px;
+  padding-right: 100px;
+}
+
+footer .footer_menu2 .right_up > ul,
+footer .footer_menu2 .right_down > ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+footer .footer_menu2 .right_up > ul {
+  display: flex;
+  /* justify-content: space-around; */
+}
+footer .footer_menu2 .right_up > ul > li {
+  padding-right: 50px;
+  margin: 15px 0px;
+}
+footer .footer_menu2 .right_down > ul {
+  margin: 15px 0px;
+}
+footer .footer_menu2 .right_down > ul > li {
+  padding-bottom: 3px;
+}
